@@ -1,0 +1,554 @@
+* {
+  margin: 0 auto;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+}
+
+html {
+  font-size: 10px;
+}
+
+header {
+  background-color: rgba(146, 146, 147, 0.5);
+  width: 100%;
+  height: 50rem;
+  position: relative;
+  display: flex;
+  flex-flow: column;
+  justify-content: space-between;
+}
+
+header::before{
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-image:  url("./style/Layer4@1X.png");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  width: 100%;
+  height: 100%;
+  z-index: -10;
+}
+
+.top {
+  width: 90%;
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  flex-flow: row wrap;
+  top: 6%;
+
+}
+/* .navlink {
+  margin: 0;
+  width: 3.5%;
+}
+
+.navlink::after{
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -10;
+} */
+a {
+  margin: 0;
+  width: 3.1rem;
+}
+.menu {
+  margin: 0;
+  width: 3.5%;
+  height: 100%;
+  display: flex;
+  flex-flow: column;
+  position: relative;
+}
+
+.img1, .img2, .img3 {
+  position: absolute;
+  /* padding: 1%; */
+  justify-content: flex-start;
+  height: 0.1rem;
+}
+
+.img2 {
+  width: 1.5rem;
+  top: 50%;
+  /* top: 10%; */
+}
+
+.img1 {
+  top: 20%;
+  width: 3.1rem;
+}
+
+.img3 {
+  top: 80%;
+  width: 2.3rem;
+}
+
+.top h2 {
+  margin: 0;
+  display: flex;
+  text-transform: uppercase;
+  font-family: Montserrat-Bold;
+  font-size: 18pt;
+  color: rgba(96, 96, 110, 255);
+  text-align: left;
+}
+
+.main h2 {
+  text-transform: uppercase;
+  font-family: Montserrat-Bold;
+  font-size: 36pt;
+  color: rgba(96, 96, 110, 255);
+  text-align: center;
+}
+.nav1 a, .nav2 a {
+  text-transform: uppercase;
+  font-family: Montserrat-Bold;
+  font-size: 14pt;
+  color: rgba(96, 96, 110, 255);
+  text-align: center;
+}
+
+.nav1, .nav2 {
+  margin: 1%;
+}
+
+.main {
+  position: relative;
+  top: -30%;
+}
+
+.nav ul {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+}
+
+.nav1 a::after{
+  content: '/';
+  margin: 5%;
+}
+
+
+
+
+
+
+.title {
+  margin-top: 7%;
+  display: flex;
+  flex-flow: row;
+  justify-content: space-between;
+  width: 90%;
+}
+
+.title1 {
+  margin: 0 2% 0 0;
+}
+
+.title2 {
+  margin: 0 0 0 2%;
+}
+
+
+.title1 h2, .title2 h2 {
+  position: relative;
+  text-transform: uppercase;
+  font-family: Ionicons, Montserrat-Bold;
+  font-size: 30pt;
+  color: rgba(96, 96, 110, 255);
+  text-align: left;
+}
+
+.title1 h4, .title2 h4 {
+  margin: 3% 0;
+  text-transform: uppercase;
+  font-family: OpenSans-Extrabold, Ionicons;
+  font-size: 14pt;
+  color: rgba(96, 96, 110, 255);
+  text-align: left;
+}
+
+.title1 p, .title2 p {
+  font-family: OpenSans-Light, OpenSans-Italic;
+  font-size: 14pt;
+  color: rgba(96, 96, 110, 255);
+  text-align: left;
+  line-height: 180%;
+}
+
+.blue-box::after{
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: rgb(123, 238, 199);
+  width: 7.8rem;
+  height: 65%;
+  z-index: -10;
+  transform: translateY(70%);
+}
+
+.Benefits {
+  display: flex;
+  flex-flow: column;
+  width: 90%;
+  margin-top: 7%;
+
+}
+
+.Benefits h2 {
+  text-transform: uppercase;
+  font-family: Ionicons, Montserrat-Bold;
+  font-size: 30pt;
+  color: rgba(96, 96, 110, 255);
+  text-align: center;
+  position: relative;
+}
+
+.Benefits p {
+  width: 75%;
+  margin: 2% auto;
+  font-family: OpenSans-Light, Ionicons;
+  font-size: 14pt;
+  color: rgba(96, 96, 110, 255);
+  text-align: center;
+  line-height: 180%;
+}
+
+.B1 h2, .B2 h2, .B3 h2, .B4 h2, .B5 h2, .B6 h2 {
+  margin: 3%;
+  text-transform: uppercase;
+  font-family: Montserrat-Bold, OpenSans-Italic;
+  font-size: 18pt;
+  color: rgba(96, 96, 110, 255);
+  text-align: left;
+  position: relative;
+}
+
+.B1 p, .B2 p, .B3 p, .B4 p, .B5 p, .B6 p {
+  font-family: OpenSans-Light, OpenSans-Italic;
+  font-size: 14pt;
+  color: rgba(96, 96, 110, 255);
+  text-align: left;
+  line-height: 180%;
+}
+
+/* .B1 h2::before {
+  text-transform: uppercase;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color:  rgb(123, 238, 199);
+  width: 4rem;
+  height: 4rem;
+  content: '';
+
+} */
+
+.Benefits1 {
+  display: flex;
+  margin-top: 5%;
+}
+
+.Benefits2 {
+  display: flex;
+  margin-top: 4%;
+}
+
+.icons {
+  
+  position: relative;
+  margin: 0;
+  background-color:  rgb(123, 238, 199);
+  width: 4rem;
+  height: 4rem;
+}
+
+.headers {
+  display: flex;
+  width: 100%;
+  align-items: center;
+}
+
+.B2, .B5 {
+  margin: 0 3%;
+}
+/* i {
+  width: 100%;
+  height: 100%;
+} */
+/* .icon img {
+  margin: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 2.2rem;
+  height: 3.3rem;
+} */
+
+.ion {
+  position: absolute; 
+  top: 5%;
+  /* left: 0; */
+  /* transform: translateX(50%); */
+  font-size: 3.5rem;
+  color: rgb(255, 255, 255);
+  width: 100%;
+  height: 100%;
+  /* margin: 0; */
+  /* text-align: right;
+  vertical-align: center; */
+}
+
+.ion::before{
+  width: 100%;
+  height: 4rem;
+  text-align: center;
+  vertical-align: -5%;
+}
+
+.DT {
+  width: 90%;
+  display: flex;
+  flex-flow: column;
+  margin-top: 7%;
+}
+
+.DT h2 {
+  text-transform: uppercase;
+  font-family: Ionicons, Montserrat-Bold;
+  font-size: 30pt;
+  color: rgba(96, 96, 110, 255);
+  text-align: center;
+  position: relative;
+}
+
+.DT p {
+  width: 75%;
+  margin: 2% auto;
+  font-family: OpenSans-Light, Ionicons;
+  font-size: 14pt;
+  color: rgba(96, 96, 110, 255);
+  text-align: center;
+  line-height: 180%;
+}
+
+.DT1 {
+  display: flex;
+  flex-flow: row;
+  justify-content: space-between;
+  margin: 5% 0 0 0;
+}
+
+.DT2 {
+  display: flex;
+  flex-flow: row;
+  margin: 3% 0 3% 0;
+  justify-content: space-between;
+}
+
+.pic1 img, .pic2 img, .pic3 img {
+  margin: 0 0.5%;
+  flex-grow: 1;
+}
+
+/* .crop {
+  flex-grow: 1;
+  flex-shrink: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+
+.crop img {
+  position: relative;
+  transform: translateX(-13%);
+  width: 100%;
+}
+
+.picl {
+  position: relative;
+  flex-grow: 1;
+  flex-shrink: 0;
+  width: 70%;
+} */
+
+ .pic1, .pic2, .pic3, .pic4, .pic5, .pic6, .pic7, .pic8 {
+  margin: 0;
+  width: 26.4rem;
+  height: 33.5rem;
+  overflow: hidden;
+  position: relative;
+}
+
+.pic4 img {
+  margin: 0 0.5%;
+  flex: 1;
+  transform: translateX(-10%);
+}
+
+.pic5 img {
+  margin: 0 0.5%;
+  flex: 1;
+  position: absolute;
+  transform: translateX(-22%);
+}
+
+.pic6 img {
+  margin: 0 0.5%;
+  flex: 1;
+  position: absolute;
+  transform: translateX(-22%);
+}
+
+.pic7 img {
+  margin: 0 0.5%;
+  flex: 1;
+  position: absolute;
+  transform: translateX(-22%);
+}
+
+.pic8 img {
+  margin: 0 0.5%;
+  flex: 1;
+  position: absolute;
+  transform: translateX(-22%);
+}
+
+footer {
+  background-color:  rgb(123, 238, 199);
+  padding: 5%;
+  display: flex;
+  flex-flow: row;
+  justify-content: center;
+}
+
+.GIT h2 {
+  text-transform: uppercase;
+  font-family: ArabicTypesetting, Montserrat-Bold;
+  font-size: 30pt;
+  color: rgba(255, 255, 255, 255);
+  text-align: left;
+  margin-right: 15%;
+}
+
+.GIT {
+  flex-grow: 1;
+  display: flex;
+  flex-flow: column;
+}
+
+.btn {
+  padding: 1.5%;
+  margin: 0;
+  width: 20%;
+  text-transform: uppercase;
+  background-color: rgb(255, 255, 255);
+  font-family: ArabicTypesetting, Montserrat-Bold;
+  font-size: 14pt;
+  color: rgba(123, 238, 199, 255);
+  text-align: center;
+  }
+
+.contact {
+  padding: 2%;
+  flex-grow: 1;
+  flex-flow: column;
+  background-color: rgb(255, 255, 255);
+  display: flex;
+  width: 54%;
+}
+
+.contact h2 {
+  margin: 0;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-family: ArabicTypesetting, Montserrat-Bold;
+  font-size: 24pt;
+  color: rgba(96, 96, 110, 255);
+  text-align: left;
+}
+
+.contact p {
+  text-transform: uppercase;
+  font-family: ArabicTypesetting, OpenSans;
+  font-size: 16pt;
+  color: rgba(153, 153, 153, 255);
+  text-align: left;
+}
+
+.n {
+  width: 100%;
+  resize: none;
+  position: relative;
+  margin-top: 3%;
+}
+
+.send {
+  position: absolute;
+  top: 0;
+  right: 0;
+  background-color:  rgb(123, 238, 199);
+  width: 15%;
+  height: 100%;
+  font-family: ArabicTypesetting, Montserrat-Bold;
+  font-size: 14pt;
+  color: rgba(255, 255, 255, 255);
+  text-align: center;
+}
+
+input {
+  width: 100%;
+  margin: 0;
+  padding: 2%;
+  border: 0.1rem rgba(205, 205, 205, 255) solid;
+}
+
+input[type="text"]::placeholder {
+  /* width: 100%; */
+  text-transform: uppercase;
+  margin: 0;
+  font-family: ArabicTypesetting, Montserrat-Bold;
+  font-size: 12pt;
+  color: rgba(205, 205, 205, 255);
+  text-align: left;
+}
+
+
+@font-face {
+  font-family: ArabicTypesetting;
+  src: url("./style/arabtype.ttf");
+}
+
+@font-face {
+  font-family: Montserrat-Bold;
+  src: url('./style/montserrat/Montserrat-Bold.otf');
+}
+
+@font-face {
+  font-family: Ionicons;
+  src: url('./style/Ionicons_Iconfont/ionicons-2.0.1/fonts/ionicons.ttf');
+}
+
+@font-face {
+  font-family: OpenSans-Extrabold;
+  src: url('./style/open-sans/OpenSans-ExtraBold.ttf');
+}
+
+@font-face {
+  font-family: OpenSans-Light;
+  src: url('./style/open-sans/OpenSans-Light.ttf');
+}
+
+@font-face {
+  font-family: OpenSans-Italic;
+  src: url('./style/open-sans/OpenSans-Italic.ttf');
+}
