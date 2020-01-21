@@ -9,6 +9,9 @@
 html {
   font-size: 10px;
 }
+body {
+  font-size: 1.6rem;
+}
 
 header {
   background-color: rgba(146, 146, 147, 0.5);
@@ -27,7 +30,7 @@ header::before{
   left: 0;
   background-image:  url("./style/Layer4@1X.png");
   background-repeat: no-repeat;
-  background-size: 100%;
+  background-size: cover;
   width: 100%;
   height: 100%;
   z-index: -10;
@@ -55,6 +58,7 @@ header::before{
   z-index: -10;
 } */
 a {
+  height: 2.9vh;
   margin: 0;
   width: 3.1rem;
 }
@@ -95,7 +99,7 @@ a {
   display: flex;
   text-transform: uppercase;
   font-family: Montserrat-Bold;
-  font-size: 18pt;
+  font-size: 1.8rem;
   color: rgba(96, 96, 110, 255);
   text-align: left;
 }
@@ -103,14 +107,14 @@ a {
 .main h2 {
   text-transform: uppercase;
   font-family: Montserrat-Bold;
-  font-size: 36pt;
+  font-size: 3.6rem;
   color: rgba(96, 96, 110, 255);
   text-align: center;
 }
 .nav1 a, .nav2 a {
   text-transform: uppercase;
   font-family: Montserrat-Bold;
-  font-size: 14pt;
+  font-size: 1.4rem;
   color: rgba(96, 96, 110, 255);
   text-align: center;
 }
@@ -136,48 +140,46 @@ a {
 }
 
 
-
+.wrap {
+  margin: 7% auto;
+  display: flex;
+  max-width: 1140px;
+}
 
 
 
 .title {
-  margin-top: 7%;
-  display: flex;
   flex-flow: row;
   justify-content: space-between;
-  width: 90%;
+
 }
 
-.title1 {
-  margin: 0 2% 0 0;
-}
-
-.title2 {
-  margin: 0 0 0 2%;
+.sub-title {
+  width: 48%;
 }
 
 
-.title1 h2, .title2 h2 {
+.sub-title h2 {
   position: relative;
   text-transform: uppercase;
   font-family: Ionicons, Montserrat-Bold;
-  font-size: 30pt;
+  font-size: 3rem;
   color: rgba(96, 96, 110, 255);
   text-align: left;
 }
 
-.title1 h4, .title2 h4 {
+.sub-title h4 {
   margin: 3% 0;
   text-transform: uppercase;
   font-family: OpenSans-Extrabold, Ionicons;
-  font-size: 14pt;
+  font-size: 1.4rem;
   color: rgba(96, 96, 110, 255);
   text-align: left;
 }
 
-.title1 p, .title2 p {
+.sub-title p {
   font-family: OpenSans-Light, OpenSans-Italic;
-  font-size: 14pt;
+  font-size: 1.4rem;
   color: rgba(96, 96, 110, 255);
   text-align: left;
   line-height: 180%;
@@ -196,48 +198,46 @@ a {
 }
 
 .Benefits {
-  display: flex;
   flex-flow: column;
-  width: 90%;
-  margin-top: 7%;
 
 }
 
 .Benefits h2 {
   text-transform: uppercase;
   font-family: Ionicons, Montserrat-Bold;
-  font-size: 30pt;
+  font-size: 3rem;
   color: rgba(96, 96, 110, 255);
   text-align: center;
   position: relative;
 }
 
-.Benefits p {
+.p {
   width: 75%;
   margin: 2% auto;
   font-family: OpenSans-Light, Ionicons;
-  font-size: 14pt;
+  font-size: 1.4rem;
   color: rgba(96, 96, 110, 255);
   text-align: center;
   line-height: 180%;
 }
 
-.B1 h2, .B2 h2, .B3 h2, .B4 h2, .B5 h2, .B6 h2 {
+.B h2 {
   margin: 3%;
   text-transform: uppercase;
   font-family: Montserrat-Bold, OpenSans-Italic;
-  font-size: 18pt;
+  font-size: 1.8rem;
   color: rgba(96, 96, 110, 255);
   text-align: left;
   position: relative;
 }
 
-.B1 p, .B2 p, .B3 p, .B4 p, .B5 p, .B6 p {
+.B p {
   font-family: OpenSans-Light, OpenSans-Italic;
-  font-size: 14pt;
+  font-size: 1.4rem;
   color: rgba(96, 96, 110, 255);
   text-align: left;
   line-height: 180%;
+  margin: auto 0;
 }
 
 /* .B1 h2::before {
@@ -252,14 +252,12 @@ a {
 
 } */
 
-.Benefits1 {
+.Ben {
   display: flex;
-  margin-top: 5%;
-}
-
-.Benefits2 {
-  display: flex;
-  margin-top: 4%;
+  max-width: 1140px;
+  justify-content: space-evenly;
+  flex-flow: row wrap;
+  margin: 5% auto;
 }
 
 .icons {
@@ -275,10 +273,12 @@ a {
   display: flex;
   width: 100%;
   align-items: center;
+  margin: 2% 0;
 }
 
-.B2, .B5 {
-  margin: 0 3%;
+.B {
+  width: 31%;
+  margin: 3vmin 0;
 }
 /* i {
   width: 100%;
@@ -315,16 +315,13 @@ a {
 }
 
 .DT {
-  width: 90%;
-  display: flex;
   flex-flow: column;
-  margin-top: 7%;
 }
 
 .DT h2 {
   text-transform: uppercase;
   font-family: Ionicons, Montserrat-Bold;
-  font-size: 30pt;
+  font-size: 3rem;
   color: rgba(96, 96, 110, 255);
   text-align: center;
   position: relative;
@@ -334,29 +331,21 @@ a {
   width: 75%;
   margin: 2% auto;
   font-family: OpenSans-Light, Ionicons;
-  font-size: 14pt;
+  font-size: 1.4rem;
   color: rgba(96, 96, 110, 255);
   text-align: center;
   line-height: 180%;
 }
 
 .DT1 {
-  display: flex;
-  flex-flow: row;
-  justify-content: space-between;
-  margin: 5% 0 0 0;
+  flex-flow: row wrap;
+  justify-content: space-evenly;
 }
 
-.DT2 {
-  display: flex;
-  flex-flow: row;
-  margin: 3% 0 3% 0;
-  justify-content: space-between;
-}
 
-.pic1 img, .pic2 img, .pic3 img {
+
+.pic img {
   margin: 0 0.5%;
-  flex-grow: 1;
 }
 
 /* .crop {
@@ -381,8 +370,8 @@ a {
   width: 70%;
 } */
 
- .pic1, .pic2, .pic3, .pic4, .pic5, .pic6, .pic7, .pic8 {
-  margin: 0;
+ .pic {
+  margin: 2vmin 0;
   width: 26.4rem;
   height: 33.5rem;
   overflow: hidden;
@@ -390,38 +379,14 @@ a {
 }
 
 .pic4 img {
-  margin: 0 0.5%;
-  flex: 1;
   transform: translateX(-10%);
 }
 
-.pic5 img {
-  margin: 0 0.5%;
-  flex: 1;
+.pic-size img {
   position: absolute;
   transform: translateX(-22%);
 }
 
-.pic6 img {
-  margin: 0 0.5%;
-  flex: 1;
-  position: absolute;
-  transform: translateX(-22%);
-}
-
-.pic7 img {
-  margin: 0 0.5%;
-  flex: 1;
-  position: absolute;
-  transform: translateX(-22%);
-}
-
-.pic8 img {
-  margin: 0 0.5%;
-  flex: 1;
-  position: absolute;
-  transform: translateX(-22%);
-}
 
 footer {
   background-color:  rgb(123, 238, 199);
@@ -434,7 +399,7 @@ footer {
 .GIT h2 {
   text-transform: uppercase;
   font-family: ArabicTypesetting, Montserrat-Bold;
-  font-size: 30pt;
+  font-size: 3rem;
   color: rgba(255, 255, 255, 255);
   text-align: left;
   margin-right: 15%;
@@ -449,11 +414,11 @@ footer {
 .btn {
   padding: 1.5%;
   margin: 0;
-  width: 20%;
+  width: 22%;
   text-transform: uppercase;
   background-color: rgb(255, 255, 255);
   font-family: ArabicTypesetting, Montserrat-Bold;
-  font-size: 14pt;
+  font-size: 1.4rem;
   color: rgba(123, 238, 199, 255);
   text-align: center;
   }
@@ -472,7 +437,7 @@ footer {
   text-transform: uppercase;
   font-weight: bold;
   font-family: ArabicTypesetting, Montserrat-Bold;
-  font-size: 24pt;
+  font-size: 2.4rem;
   color: rgba(96, 96, 110, 255);
   text-align: left;
 }
@@ -480,7 +445,7 @@ footer {
 .contact p {
   text-transform: uppercase;
   font-family: ArabicTypesetting, OpenSans;
-  font-size: 16pt;
+  font-size: 1.6rem;
   color: rgba(153, 153, 153, 255);
   text-align: left;
 }
@@ -500,7 +465,7 @@ footer {
   width: 15%;
   height: 100%;
   font-family: ArabicTypesetting, Montserrat-Bold;
-  font-size: 14pt;
+  font-size: 1.4rem;
   color: rgba(255, 255, 255, 255);
   text-align: center;
 }
@@ -517,7 +482,7 @@ input[type="text"]::placeholder {
   text-transform: uppercase;
   margin: 0;
   font-family: ArabicTypesetting, Montserrat-Bold;
-  font-size: 12pt;
+  font-size: 1.2rem;
   color: rgba(205, 205, 205, 255);
   text-align: left;
 }
@@ -551,4 +516,111 @@ input[type="text"]::placeholder {
 @font-face {
   font-family: OpenSans-Italic;
   src: url('./style/open-sans/OpenSans-Italic.ttf');
+}
+
+@media only screen and (max-width: 800px) {
+  html {
+    font-size: 9px;
+  }
+  .top {
+    width: 95%;
+  }
+  .sub-title {
+    width: 45%;
+  }
+  .Ben {
+    margin: 2% auto;
+    justify-content: space-around;
+  }
+  .B {
+    width: 37%;
+    margin: 3vmin 0;
+  }
+  .wrap {
+    margin: 5% auto;
+  }
+  .DT1 {
+    justify-content: center;
+  }
+  .pic {
+    margin: 2vmin 1.5vmin;
+  }
+  .pic img {
+    transform: translateX(-10%);
+  }
+  .pic4 img {
+    transform: translateX(-22%);
+}
+  .pic-size img {
+    transform: translateX(-25%);
+  }
+
+  .footer {
+    padding: 3%;
+  }
+  .btn {
+    padding: 2.5%;
+    width: 35%;
+    font-size: 1.7rem;
+  }
+  .contact {
+    width: 75%;
+  }
+  .send {
+    font-size: 1.6rem;
+    width: 20%;
+  }
+
+}
+@media only screen and (max-width: 600px) {
+  html {
+    font-size: 8px;
+  }
+  .top {
+    width: 30%;
+}
+  .main {
+    top: -35%;
+  }
+  .title {
+    flex-flow: row wrap;
+    justify-content: center;
+  }
+  .sub-title {
+    width: 70%;
+    margin: 3vmin auto;
+  }
+  .p {
+    width: 70%;
+  }
+  .Ben {
+    justify-content: center;
+  }
+  .B {
+    width: 70%;
+    margin: 3vmin auto;
+  }
+  .pic {
+    margin: 2vmin 10vmin;
+}
+  footer {
+    flex-flow: column;
+  }
+  .GIT {
+    width: 78%;
+  }
+  .GIT h2 {
+    margin-right: 0%;
+    margin-bottom: 2rem;
+  }
+  .btn {
+    margin-left: 30%;
+    padding: 3.5%;
+    width: 45%;
+    font-size: 2.3rem;
+    margin-bottom: 8%;
+  }
+  .contact {
+    width: 78%;
+}
 }
